@@ -1,0 +1,20 @@
+{
+  "name": "rangeforce",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Orleika <orleika@users.noreply.github.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.2.1"
+  }
+}
