@@ -1,18 +1,55 @@
-.demo-layout-transparent {
-  background: url('') center / cover;
+@import "_variables.scss";
+@import "_init.scss";
+
+.rf-layout-transparent {
+  background: url('../images/transparent.jpg') center / cover;
+  color: $color-white;
 }
+
+.rf-layout-black {
+  background-color: $color-grey-900;
+  color: $color-white;
+}
+
 .mdl-layout__header-row {
   padding-left: 40px;
 }
-.fr-logo {
+
+.rf-logo {
   background: url('../images/rangeforce-02_trim_adj.png') left top no-repeat;
   background-size: 242px 50px;
   height: 50px;
   width: 242px;
   float: left;
 }
-.demo-layout-transparent .mdl-layout__header, .demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: #212121;
+
+.top-header {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.rf-slogan {
+  font-size: 3rem;
+}
+
+@media (max-width: 900px) {
+  .top-header {
+    padding: 3rem 0;
+  }
+
+  .rf-slogan {
+    font-size: 2rem;
+  }
+}
+
+.rf-sub-slogan {
+  margin: 20px auto;
+}
+
+.footer {
+  padding: 10px 40px;
+}
+
+.section {
+  padding: 1.3rem;
 }

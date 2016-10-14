@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NotoSansJP-Regular.otf'), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2") format('woff2'), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff") format('woff'), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf") format('opentype');
+}
+
+body,
+html {
+  font-size: 16px;
+  background-color: $color-white;
+}
+
+body {
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7em;
+  letter-spacing: 0.125em;
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}

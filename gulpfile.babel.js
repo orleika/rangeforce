@@ -8,6 +8,11 @@ gulp.task('default', ['compile'])
 
 gulp.task('compile', ['html', 'scss', 'image'])
 
+gulp.task('watch', () => {
+  gulp.watch('src/*.html', ['html'])
+  gulp.watch('src/sass/*.scss', ['scss'])
+})
+
 gulp.task('clean', del.bind(null, ['dist/*']))
 
 gulp.task('html', () => {
