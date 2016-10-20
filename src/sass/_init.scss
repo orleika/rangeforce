@@ -15,8 +15,14 @@ body {
   font-family: 'Noto Sans Japanese', sans-serif;
   font-size: 1rem;
   line-height: 1.7em;
-  letter-spacing: 0.125em;
+  letter-spacing: .125em;
   text-align: justify;
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+p {
+  font-size: 1em;
+  letter-spacing: 0.125em;
+  margin: 0 0 1em;
 }

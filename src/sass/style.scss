@@ -4,10 +4,25 @@
 .rf-layout-transparent {
   background: url('../images/transparent.jpg') center / cover;
   color: $color-white;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+}
+.rf-layout-transparent:before {
+  content: '';
+  background: inherit;
+  filter: brightness(60%);
+  z-index: -1;
+  position: absolute;
 }
 
 .rf-layout-black {
   background-color: $color-grey-900;
+  color: $color-white;
+}
+
+.rf-layout-blue {
+  background-color: $color-primary;
   color: $color-white;
 }
 
@@ -26,6 +41,7 @@
 .top-header {
   padding: 6rem 0;
   text-align: center;
+  color: $color-white;
 }
 
 .rf-slogan {
