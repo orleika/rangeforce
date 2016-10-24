@@ -8,14 +8,12 @@
 body,
 html {
   font-size: 16px;
-  background-color: $color-white;
 }
 
 body {
   font-family: 'Noto Sans Japanese', sans-serif;
   font-size: 1rem;
   line-height: 1.6em;
-  letter-spacing: .0625em;
   text-align: justify;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -26,8 +24,4 @@ p {
   line-height: 1.6em;
   letter-spacing: 0.0625em;
   margin: 0 0 1em;
-}
-
-.mdl-layout__header {
-  background-color: $color-white;
 }

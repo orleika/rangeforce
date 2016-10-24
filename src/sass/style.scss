@@ -1,57 +1,32 @@
 @import "_variables.scss";
 @import "_init.scss";
+// BEM
+// block__element--modifier
 
-.rf-layout-transparent {
-  background: url('../images/transparent.jpg') center / cover;
-  color: $color-white;
-  z-index: 0;
-  overflow: hidden;
-  position: relative;
-}
-.rf-layout-transparent:before {
-  content: '';
-  background: inherit;
-  filter: brightness(60%);
-  z-index: -1;
-  position: absolute;
+.rf-color-text--primary {
+  color: $color-primary;
 }
 
-.rf-layout-black {
-  background-color: $color-grey-900;
-  color: $color-white;
-}
-
-.rf-layout-blue {
-  background-color: $color-primary;
-  color: $color-white;
-}
-
-.mdl-layout__header-row {
-  padding-left: 40px;
-}
-
-.rf-logo {
-  background: url('../images/rangeforce-02_trim_adj.png') left top no-repeat;
-  background-size: 242px 50px;
-  height: 50px;
-  width: 242px;
-  float: left;
+.rf-color--primary {
+  background: $color-primary;
 }
 
 .top-header {
-  padding: 6rem 0;
+  padding: 3rem 0;
   text-align: center;
-  color: $color-white;
 }
 
-.rf-slogan {
+.top-header__img {
+  margin: 1em auto;
+}
+
+.top-header__slogan {
   font-size: 3rem;
 }
 
-.rf-sub-slogan {
+.top-header__sub-slogan {
   margin: 20px auto;
 }
-
 @media (max-width: 480px) {
   .top-header {
     padding: 3rem 0;
@@ -67,8 +42,21 @@
 }
 
 .section {
-  padding: 20px 40px;
+  box-sizing: border-box;
 }
 
-.section-info {
+.section--text {
+  padding: 100px;
 }
+
+.section--text p {
+  width: 640px;
+  margin: 0 auto;
+  line-height: 2em;
+}
+
+.is-small-screen .section--text {
+  display: none;
+}
+
+.section-info {}
