@@ -17,11 +17,11 @@ body {
   text-align: justify;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  box-sizing: border-box;
 }
 
 p {
   font-size: 1em;
   line-height: 1.6em;
-  letter-spacing: 0.0625em;
   margin: 0 0 1em;
 }

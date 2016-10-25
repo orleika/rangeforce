@@ -1,6 +1,5 @@
 @import "_variables.scss";
-@import "_init.scss";
-// BEM
+@import "_init.scss"; // BEM
 // block__element--modifier
 
 .rf-color-text--primary {
@@ -18,27 +17,20 @@
 
 .top-header__img {
   margin: 1em auto;
+  width: 400px;
 }
 
 .top-header__slogan {
   font-size: 3rem;
 }
 
-.top-header__sub-slogan {
+.top-header__description {
   margin: 20px auto;
 }
 @media (max-width: 480px) {
   .top-header {
-    padding: 3rem 0;
+    // padding: 3rem 0;
   }
-
-  .rf-slogan {
-    font-size: 2rem;
-  }
-}
-
-.footer {
-  padding: 10px 40px;
 }
 
 .section {
@@ -46,17 +38,46 @@
 }
 
 .section--text {
-  padding: 100px;
+  padding: 6rem 1rem;
 }
 
 .section--text p {
-  width: 640px;
+  max-width: $grid-base-size;
   margin: 0 auto;
   line-height: 2em;
 }
 
+@media only screen and (min-width: $size-pc) {
+  .section--rev .grid {
+    direction: rtl;
+  }
+
+  .section--rev .grid > .mdl-cell {
+    direction: ltr;
+  }
+}
+
+.grid__item {
+  display: inline-block;
+  margin: 2rem auto;
+  padding-left: 1rem;
+}
+
+.grid--middle > .mdl-cell {
+  vertical-align: middle;
+}
+
+.section__image {
+  max-width: $grid-base-size;
+  width: 100%;
+}
+
 .is-small-screen .section--text {
-  display: none;
+  // display: none;
 }
 
 .section-info {}
+
+.footer {
+  // padding: 1rem ;
+}
