@@ -6,7 +6,7 @@ const $ = gulpLoadPlugins()
 
 gulp.task('default', ['compile'])
 
-gulp.task('compile', ['html', 'scss', 'image'])
+gulp.task('compile', ['html', 'scss', 'image', 'favicon'])
 
 gulp.task('watch', () => {
   gulp.watch('src/*.html', ['html'])
@@ -35,14 +35,19 @@ gulp.task('scss', () => {
     .pipe(gulp.dest('dist/css'))
 })
 
-gulp.task('image', function () {
+gulp.task('image', () => {
   gulp.src('src/images/*')
     .pipe($.plumber())
     .pipe($.image())
     .pipe(gulp.dest('dist/images'))
 })
 
+gulp.task('favicon', () => {
+  gulp.src(['src/*.png', 'src/*.ico'])
+    .pipe(gulp.dest('dist'))
+})
+
 gulp.task('lib', () => {
-  gulp.src(['bower_components/**/*.min.js', 'bower_components/**/*.min.css'])
+  gulp.src('bower_components/**/*.min.*')
     .pipe(gulp.dest('dist/lib'))
 })
