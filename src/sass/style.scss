@@ -1,6 +1,5 @@
 @import "_variables.scss";
 @import "_init.scss";
-
 // BEM
 // block__element--modifier
 
@@ -18,22 +17,27 @@
 }
 
 .top-header__img {
-  margin: 1em auto;
-  width: 400px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  max-width: 400px;
+  width: 80%;
 }
 
 .top-header__slogan {
   font-size: 3rem;
+  padding: 0 1rem;
+}
+
+.is-small-screen .top-header__slogan {
+  font-size: 2rem;
 }
 
 .top-header__description {
   margin: 20px auto;
+  padding: 0 1rem;
 }
-@media (max-width: 480px) {
-  .top-header {
-    // padding: 3rem 0;
-  }
-}
+
+
 
 .section {
   box-sizing: border-box;
@@ -48,7 +52,6 @@
   margin: 0 auto;
   line-height: 2em;
 }
-
 @media only screen and (min-width: $size-pc) {
   .section--rev .grid {
     direction: rtl;
@@ -57,21 +60,19 @@
   .section--rev .grid > .mdl-cell {
     direction: ltr;
   }
+
+  .grid__item {
+    padding-left: 2rem;
+  }
 }
 
 .grid {
   margin: 0 6rem;
 }
 
-.grid__item {
-  display: inline-block;
-  padding-left: 2rem;
-}
-
 .section__content p {
   margin: 0;
 }
-
 @media (max-width: $size-pc - 1px) {
   .grid {
     margin: 0 auto;
@@ -101,6 +102,11 @@
 }
 
 .section-info {}
+
+.info-list {
+  max-width: 300px;
+  margin: 0 auto;
+}
 
 .footer {
   padding: 1rem;
