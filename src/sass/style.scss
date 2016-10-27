@@ -1,6 +1,5 @@
 @import "_variables.scss";
-@import "_init.scss";
-// BEM
+@import "_init.scss"; // BEM
 // block__element--modifier
 
 .rf-color-text--primary {
@@ -33,11 +32,11 @@
 }
 
 .top-header__description {
+  max-width: $size-grid;
   margin: 20px auto;
   padding: 0 1rem;
+  text-align: justify;
 }
-
-
 
 .section {
   box-sizing: border-box;
@@ -48,7 +47,7 @@
 }
 
 .section--text p {
-  max-width: $grid-base-size;
+  max-width: $size-grid;
   margin: 0 auto;
   line-height: 2em;
 }
@@ -73,6 +72,9 @@
 .section__content p {
   margin: 0;
 }
+.section__image img {
+  width: 100%;
+}
 @media (max-width: $size-pc - 1px) {
   .grid {
     margin: 0 auto;
@@ -88,7 +90,7 @@
 
   .section__image img {
     display: block;
-    max-width: $grid-base-size;
+    max-width: $size-grid;
     margin: 2rem auto 0;
   }
 }
@@ -109,5 +111,6 @@
 }
 
 .footer {
-  padding: 1rem;
+  font-size: 0.7rem;
+  padding: 0.35rem 1rem;
 }
