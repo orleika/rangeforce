@@ -38,7 +38,7 @@ gulp.task('scss', () => {
 gulp.task('image', () => {
   gulp.src('src/images/*')
     .pipe($.plumber())
-    .pipe($.image())
+    .pipe($.imagemin())
     .pipe(gulp.dest('dist/images'))
 })
 
