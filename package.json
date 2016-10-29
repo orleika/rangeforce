@@ -4,7 +4,8 @@
     "clean": "gulp clean",
     "watch": "gulp watch",
     "compile": "gulp compile",
-    "release": "npm run clean && npm run lib && npm run compile && npm run lib",
+    "lib": "gulp lib",
+    "release": "npm run clean && npm run compile && npm run lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
