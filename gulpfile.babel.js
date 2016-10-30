@@ -11,6 +11,7 @@ gulp.task('compile', ['html', 'scss', 'image', 'favicon'])
 gulp.task('watch', () => {
   gulp.watch('src/*.html', ['html'])
   gulp.watch('src/sass/*.scss', ['scss'])
+  gulp.watch('src/images/*', ['image'])
 })
 
 gulp.task('clean', del.bind(null, ['dist/*']))
