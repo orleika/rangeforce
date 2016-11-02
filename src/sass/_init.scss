@@ -1,20 +1,13 @@
 /*
 ** Noto Sans Japanese (japanese) http://www.google.com/fonts/earlyaccess
 */
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: normal;
-  font-weight: 400;
-  src: local('NotoSansJP-Regular.otf'), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2") format('woff2'), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff") format('woff'), url("//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf") format('opentype');
-}
-
 body,
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: 'Noto Sans Japanese', sans-serif;
+  font-family: "Lato", Helvetica, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
   font-size: 1rem;
   line-height: 1.6em;
   text-align: justify;
