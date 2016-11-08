@@ -1,6 +1,9 @@
 @import "_variables.scss";
-@import "_init.scss"; // BEM
-// block__element--modifier
+@import "_init.scss";
+/**
+ * BEM
+ * block__element--modifier
+ */
 
 .rf-color-text--primary {
   color: $color-primary;
@@ -98,11 +101,15 @@
   vertical-align: middle;
 }
 
-.is-small-screen .section--text {
-  // display: none;
+.learner-list {
+  padding: 0;
 }
 
-.section-info {}
+.learner-list__item {
+  padding: 0;
+  min-height: 2.4em;
+  font-size: 1rem;
+}
 
 .info-list {
   max-width: 300px;
