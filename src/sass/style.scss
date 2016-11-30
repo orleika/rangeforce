@@ -4,7 +4,6 @@
  * BEM
  * block__element--modifier
  */
-
 .rf-color-text--primary {
   color: $color-primary;
 }
@@ -54,6 +53,10 @@
   line-height: 2em;
 }
 @media only screen and (min-width: $size-pc) {
+  .section__content-header {
+    white-space: nowrap;
+  }
+
   .section--rev .grid {
     direction: rtl;
   }
@@ -74,8 +77,17 @@
 .section__content p {
   margin: 0 auto;
 }
+
 .section__image img {
+  display: block;
+  margin: 0 auto;
   width: 100%;
+}
+@media (max-width: $size-grid) {
+  .rlb::before {
+    content: "\000a";
+    white-space: pre-line;
+  }
 }
 @media (max-width: $size-pc - 1px) {
   .grid {
@@ -102,7 +114,9 @@
 }
 
 .learner-list {
+  margin: 0 auto;
   padding: 0;
+  max-width: $size-grid;
 }
 
 .learner-list__item {
