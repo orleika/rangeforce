@@ -17,6 +17,11 @@
   text-align: center;
 }
 
+.top-header--profile {
+  padding: 3rem 0 1rem;
+  text-align: center;
+}
+
 .top-header__img {
   margin: 1rem auto;
   padding: 0 1rem;
@@ -53,10 +58,6 @@
   line-height: 2em;
 }
 @media only screen and (min-width: $size-pc) {
-  .section__content-header {
-    white-space: nowrap;
-  }
-
   .section--rev .grid {
     direction: rtl;
   }
@@ -74,6 +75,10 @@
   margin: 0 6rem;
 }
 
+.section__content-header {
+  font-size: 2rem;
+}
+
 .section__content p {
   margin: 0 auto;
 }
@@ -83,30 +88,9 @@
   margin: 0 auto;
   width: 100%;
 }
-@media (max-width: $size-grid) {
-  .rlb::before {
-    content: "\000a";
-    white-space: pre-line;
-  }
-}
-@media (max-width: $size-pc - 1px) {
-  .grid {
-    margin: 0 auto;
-  }
 
-  .grid__item {
-    margin-left: 0;
-  }
-
-  .section__content p {
-    margin: 0 auto;
-  }
-
-  .section__image img {
-    display: block;
-    max-width: $size-grid;
-    margin: 2rem auto 0;
-  }
+.section__image--center {
+  margin: 2rem auto 0 !important;
 }
 
 .grid--middle > .mdl-cell {
@@ -133,4 +117,67 @@
 .footer {
   font-size: 0.7rem;
   padding: 0.35rem 1rem;
+}
+
+.section--profile {
+  padding: 0 1rem 4rem;
+}
+
+.section--profile__item {
+  margin: 2rem 0;
+}
+
+.section--profile__list {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.section--profile__list th {
+  border-top: 1px solid rgba(0,0,0,.12);
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.section--profile__list--middle {
+  vertical-align: middle !important;
+}
+
+.section--profile__list dd {
+  margin: 0;
+}
+
+.section--profile__list--wrap {
+  white-space: normal;
+}
+@media (max-width: $size-grid) {
+  .rlb::before {
+    content: "\000a";
+    white-space: pre-line;
+  }
+
+  .section--profile__list {
+    width: 100%;
+  }
+
+  .section--profile__list--grid-wrap {
+    white-space: normal;
+  }
+}
+@media (max-width: $size-pc - 1px) {
+  .grid {
+    margin: 0 auto;
+  }
+
+  .grid__item {
+    margin-left: 0;
+  }
+
+  .section__content p {
+    margin: 0 auto;
+  }
+
+  .section__image img {
+    display: block;
+    max-width: $size-grid;
+    margin: 2rem auto 0;
+  }
 }
