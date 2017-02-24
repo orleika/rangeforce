@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+set -eu
 
 # install latest version node.js, if not found node command
 type node > /dev/null 2>&1 || curl -L https://git.io/n-install | bash -s -- -y
